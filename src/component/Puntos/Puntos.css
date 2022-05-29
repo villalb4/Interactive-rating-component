@@ -1,0 +1,34 @@
+.puntos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 27px 0 33px 0;
+}
+.button {
+  padding: 12px 10px 8px 10px;
+  border-radius: 30px;
+  color: var(--Medium-Grey);
+  background-color: var(--Dark-Blue);
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  color: var(--White);
+  background-color: var(--Light-Grey);
+}
+.button:focus {
+  color: var(--White);
+  background-color: var(--Orange);
+}
+.div_num {
+  display: flex;
+  justify-content: center;
+  height:30px;
+  width: 30px;
+}
+.num {
+  font-size: 17px;
+  line-height: normal;
+  margin-top: 4px;
+}
