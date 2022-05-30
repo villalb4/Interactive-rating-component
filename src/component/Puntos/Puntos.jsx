@@ -1,15 +1,23 @@
 import React from "react";
+import data from "./puntosData";
 import "./Puntos.css";
 
-function Puntos(props) {
-  return(
-    <div className="puntos">
-      <button className="button">
-        <div className="div_num">
-          <span className="num" key={props.id}>{props.num}</span>
-        </div>
-      </button>
-    </div>
+function Puntos() {
+  function handleSubmit(e) {
+    e.preventDefault()
+  }
+  return(     
+      <div className="puntos">
+        {data.map((e, i) => {
+          return (
+            <button className="button" onClick={handleSubmit}>
+              <div className="div_num">
+                <span className="num" key={e.id}>{e.num}</span>
+              </div>
+            </button>
+          )
+        })}
+      </div>
   )
 }
 

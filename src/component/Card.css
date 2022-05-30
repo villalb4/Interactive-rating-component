@@ -35,4 +35,12 @@ p {
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--White);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.submit:hover,
+.submit:focus {
+  background-color: var(--White);
+  color: var(--Orange);
+  outline: none;
 }
