@@ -2,18 +2,22 @@ import React from "react";
 import data from "./puntosData";
 import "./Puntos.css";
 
-function Puntos() {
-  function handleSubmit(e) {
-    e.preventDefault()
+function Puntos({onRating}) {
+
+  function handleClick(e) {
+    onRating(e.target.value)
+    
   }
+
   return(     
       <div className="puntos">
         {data.map((e, i) => {
           return (
-            <button className="button" onClick={handleSubmit}>
-              <div className="div_num">
-                <span className="num" key={e.id}>{e.num}</span>
-              </div>
+            <button key={e.id} className="button" onClick={handleClick} value={e.id}>
+              {/* <div className="div_num">
+                <span className="num">{e.num}</span>
+              </div> */}
+              {e.num}
             </button>
           )
         })}
