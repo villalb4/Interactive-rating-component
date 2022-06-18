@@ -2,7 +2,7 @@
   display: inline-block;
   background-color: var(--Card-BG);
   padding: 33px;
-  border-radius: 25px
+  border-radius: 25px;
 }
 .div_star {
   display: inline-block;
@@ -43,4 +43,32 @@ p {
   background-color: var(--White);
   color: var(--Orange);
   outline: none;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.total {
+  background-color: #313942;
+  max-width: 193px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 7px 0 4px;
+  margin: 25px 0 4px 0;
+}
+.starts {
+  color: #fc7614;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+.div_hero {
+  margin-top: 10px;
+}
+.para_thanks {
+  padding: 0 5px;
+  margin-bottom: 17px;
 }
